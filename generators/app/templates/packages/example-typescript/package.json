@@ -1,0 +1,26 @@
+{
+  "name": "<%= npmScope %>/example-typescript",
+  "version": "0.0.0-alpha.0",
+  "main": "dist/index.js",
+  "description": "",
+  "repository": {
+    "type" : "git",
+    "url" : "<%= repoUrl %>"
+  },
+  "author": "<%= author %>",
+  "license": "<%= license %>",
+  "scripts": {
+    "bench": "cd bench/src && node -r ts-node/register index.ts",
+    "build": "tsc",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.4",
+    "@types/node": "^14.0.20",
+    "hotloop": "^1.0.0",
+    "jest": "^26.1.0",
+    "ts-jest": "^26.1.1",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.6"
+  }
+}

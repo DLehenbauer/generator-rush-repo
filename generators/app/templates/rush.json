@@ -1,0 +1,32 @@
+/**
+ * This is the main configuration file for Rush.
+ * For full documentation, please see https://rushjs.io
+ */
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/rush/v5/rush.schema.json",
+  "pnpmVersion": "4.13.0",
+  "rushVersion": "5.23.1",
+  "nodeSupportedVersionRange": ">=12.16.0",
+  "pnpmOptions": {
+    "strictPeerDependencies": true
+  },
+  "ensureConsistentVersions": true,
+  "projectFolderMaxDepth": 3,
+  "repository": {
+    "url" : "<%= repoUrl %>"
+  },
+  "projects": [
+    {
+      "packageName": "<%= npmScope %>/tool-config",
+      "projectFolder": "packages/common/tool-config",
+      "reviewCategory": "production",
+      "versionPolicyName": "public"
+    },
+    {
+      "packageName": "<%= npmScope %>/example-typescript",
+      "projectFolder": "packages/example-typescript",
+      "reviewCategory": "production",
+      "versionPolicyName": "public"
+    }
+  ]
+}
