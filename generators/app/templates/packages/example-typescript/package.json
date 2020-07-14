@@ -12,13 +12,19 @@
   "scripts": {
     "bench": "cd bench/src && node -r ts-node/register index.ts",
     "build": "tsc",
-    "test": "jest"
+    "lint": "eslint --ext=ts --format visualstudio src",
+    "test": "node ./node_modules/jest/bin/jest.js"
   },
   "devDependencies": {
+    "<%= npmScope %>/eslint-config": "0.0.0-alpha.0",
+    "<%= npmScope %>/jest-config": "0.0.0-alpha.0",
+    "<%= npmScope %>/ts-config": "0.0.0-alpha.0",
     "@types/jest": "^26.0.4",
     "@types/node": "^14.0.20",
+    "eslint": "^7.4.0",
     "hotloop": "^1.0.0",
     "jest": "^26.1.0",
+    "jest-standard-reporter": "^1.0.4",
     "ts-jest": "^26.1.1",
     "ts-node": "^8.10.2",
     "typescript": "^3.9.6"

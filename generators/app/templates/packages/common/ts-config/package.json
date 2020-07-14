@@ -1,7 +1,7 @@
 {
-  "name": "<%= npmScope %>/tool-config",
+  "name": "<%= npmScope %>/ts-config",
   "version": "0.0.0-alpha.0",
-  "description": "Common config for build tools",
+  "description": "Common TypeScript config",
   "sideEffects": "false",
   "repository": {
     "type": "git",
@@ -11,6 +11,7 @@
   "license": "<%= license %>",
   "scripts": {
     "build": "echo No build steps necessary.",
+    "lint": "echo No lint steps necessary.",
     "test": "echo No test steps necessary."
   }
 }

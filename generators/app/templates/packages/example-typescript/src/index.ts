@@ -1,3 +1,3 @@
-export function example() {
+export function example(): number {
     return Math.random();
 }

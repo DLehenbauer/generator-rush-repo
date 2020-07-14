@@ -1,6 +1,16 @@
-# Dependency directories
+# Note: Patterns in this '.gitignore' should be scoped to artifacts of the '@plasma/root' module.
+#       Modules contained within the monorepo should function independently of the monorepo
+#       infrastructure and therefore declare their own '.gitignore' files.
+
+# NPM dependencies (root only)
 /node_modules
 
-# Rush files
+# Common Rush/pnpm cache
 /common/temp
+
+# Rush artifacts emitted into modules contained within the monorepo.  Note that this is not a
+# violation of our principle that contained modules function independently as these artifacts
+# are created by the monorepo tools.
 **/.rush
+**/*.build.log
+**/*.build.error.log

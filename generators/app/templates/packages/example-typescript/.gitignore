@@ -1,8 +1,8 @@
-# Build output
-/dist
-
-# Dependency directories
+# NPM dependencies
 /node_modules
 
-# Typescript Build info
+# Build artifacts
+/dist
+
+# Typescript incremental build cache
 /*.tsbuildinfo

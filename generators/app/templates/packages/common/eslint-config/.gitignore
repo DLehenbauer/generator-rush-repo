@@ -1,5 +1,2 @@
 # NPM dependencies
 /node_modules
-
-# Test output
-/test

@@ -1,0 +1,18 @@
+{
+  "name": "<%= npmScope %>/jest-config",
+  "version": "0.0.0-alpha.0",
+  "main": "index.js",
+  "description": "Common Jest config",
+  "sideEffects": "false",
+  "repository": {
+    "type": "git",
+    "url" : "<%= repoUrl %>"
+  },
+  "author": "<%= author %>",
+  "license": "<%= license %>",
+  "scripts": {
+    "build": "echo No build steps necessary.",
+    "lint": "echo No lint steps necessary.",
+    "test": "echo No test steps necessary."
+  }
+}
