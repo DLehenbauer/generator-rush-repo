@@ -7,11 +7,12 @@
   "author": "<%= author %>",
   "license": "<%= license %>",
   "scripts": {
-    "rush": "node common/scripts/install-run-rush.js",
-    "rush:repair": "git clean -xfd && (rm common/config/rush/pnpm-lock.yaml || true) && npm run rush -- update --purge --recheck",
-    "postinstall": "npm run rush -- install",
     "build": "npm run rush -- build",
-    "test": "npm run rush -- test",
-    "prepublishOnly": "npm run build && npm run test"
+    "clean": "git clean -Xfd",
+    "postinstall": "npm run rush -- install",
+    "prepublishOnly": "npm run build && npm run test",
+    "rush": "node common/scripts/install-run-rush.js",
+    "rush:repair": "npm run clean && (rm common/config/rush/pnpm-lock.yaml || true) && npm run rush -- update --purge --recheck",
+    "test": "npm run rush -- test"
   }
 }
