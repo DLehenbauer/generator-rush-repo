@@ -11,26 +11,26 @@
     "strictPeerDependencies": true
   },
   "ensureConsistentVersions": true,
-  "projectFolderMaxDepth": 3,
+  "projectFolderMaxDepth": 4,
   "repository": {
     "url" : "<%= repoUrl %>"
   },
   "projects": [
     {
       "packageName": "<%= npmScope %>/eslint-config",
-      "projectFolder": "packages/common/eslint-config",
+      "projectFolder": "packages/common/config/eslint-config",
       "reviewCategory": "production",
       "versionPolicyName": "public"
     },
     {
       "packageName": "<%= npmScope %>/jest-config",
-      "projectFolder": "packages/common/jest-config",
+      "projectFolder": "packages/common/config/jest-config",
       "reviewCategory": "production",
       "versionPolicyName": "public"
     },
     {
       "packageName": "<%= npmScope %>/ts-config",
-      "projectFolder": "packages/common/ts-config",
+      "projectFolder": "packages/common/config/ts-config",
       "reviewCategory": "production",
       "versionPolicyName": "public"
     },
