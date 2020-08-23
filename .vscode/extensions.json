@@ -1,0 +1,11 @@
+{
+	"recommendations": [
+        "eamodio.gitlens",
+		"esbenp.prettier-vscode",
+		"dbaeumer.vscode-eslint",
+		"drewbourne.vscode-remark-lint",
+		"ms-vscode-remote.remote-containers",
+		"ms-vsliveshare.vsliveshare",
+		"streetsidesoftware.code-spell-checker"
+	]
+}
