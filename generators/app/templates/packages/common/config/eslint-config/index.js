@@ -5,6 +5,11 @@ module.exports = {
     extends: ["@rushstack/eslint-config"],
     plugins: ["header"],
     rules: {
-        "header/header": [2, "block", "!\n * Copyright (c) <%= author %>. All rights reserved.\n * Licensed under the <%= license %> License.\n "]
+        "header/header": [
+            "error",
+            "block",
+            "!\n * Copyright (c) <%= author %>. All rights reserved.\n * Licensed under the <%= license %> License.\n ",
+            /* newLines: */ 2       // '\n\n' = 1 blank line after block comment
+        ]
     },
 };
