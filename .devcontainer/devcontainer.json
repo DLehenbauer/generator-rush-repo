@@ -1,36 +1,37 @@
 // For format details, see https://aka.ms/vscode-remote/devcontainer.json or this file's README at:
 // https://github.com/microsoft/vscode-dev-containers/tree/v0.134.1/containers/typescript-node
 {
-	"name": "Generator-Rush-Repo",
-	"build": {
-		"dockerfile": "Dockerfile",
-		// Update 'VARIANT' to pick a Node version: 10, 12, 14
-		"args": { "VARIANT": "12" }
-	},
+  "name": "Generator-Rush-Repo",
+  "build": {
+    "dockerfile": "Dockerfile",
+    // Update 'VARIANT' to pick a Node version: 10, 12, 14
+    "args": { "VARIANT": "14-buster" }
+  },
 
-	// Set *default* container specific settings.json values on container create.
-	"settings": { 
-		"terminal.integrated.shell.linux": "/bin/bash"
-	},
+  // Set *default* container specific settings.json values on container create.
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash"
+  },
 
-	// Add the IDs of extensions you want installed when the container is created.
-	"extensions": [
-		"eamodio.gitlens",
-		"editorconfig.editorconfig",
-		"esbenp.prettier-vscode",
-		"dbaeumer.vscode-eslint",
-		"drewbourne.vscode-remark-lint",
-		// "ms-vscode-remote.remote-containers",
-		"ms-vsliveshare.vsliveshare",
-		"streetsidesoftware.code-spell-checker"
-	]
+  // Add the IDs of extensions you want installed when the container is created.
+  //
+  // Note: 'ms-vscode-remote.remote-containers' is install locally, not inside the
+  //        dev container, and therefore is excluded from this list.
+  "extensions": [
+    "eamodio.gitlens",
+    "editorconfig.editorconfig",
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint",
+    "drewbourne.vscode-remark-lint",
+    "streetsidesoftware.code-spell-checker"
+  ]
 
-	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	// "forwardPorts": [],
+  // Use 'forwardPorts' to make a list of ports inside the container available locally.
+  // "forwardPorts": [],
 
-	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "yarn install",
+  // Use 'postCreateCommand' to run commands after the container is created.
+  // "postCreateCommand": "yarn install",
 
-	// Uncomment to connect as a non-root user. See https://aka.ms/vscode-remote/containers/non-root.
-	// "remoteUser": "node"
+  // Uncomment to connect as a non-root user. See https://aka.ms/vscode-remote/containers/non-root.
+  // "remoteUser": "node"
 }
