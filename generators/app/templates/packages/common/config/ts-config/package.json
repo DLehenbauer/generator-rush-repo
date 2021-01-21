@@ -5,7 +5,7 @@
   "sideEffects": "false",
   "repository": {
     "type": "git",
-    "url" : "<%= repoUrl %>"
+    "url": "<%= repoUrl %>"
   },
   "author": "<%= author %>",
   "license": "<%= license %>",

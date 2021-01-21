@@ -1,8 +1,8 @@
 {
   "name": "<%= npmScope %>/root",
   "repository": {
-    "type" : "git",
-    "url" : "<%= repoUrl %>"
+    "type": "git",
+    "url": "<%= repoUrl %>"
   },
   "author": "<%= author %>",
   "license": "<%= license %>",

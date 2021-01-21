@@ -3,6 +3,6 @@ import { example } from "../src";
 
 describe("example()", () => {
     test("returns a number", () => {
-        assert.equal(typeof(example()), "number");
+        assert.equal(typeof example(), "number");
     });
 });

@@ -4,8 +4,8 @@
   "main": "dist/index.js",
   "description": "",
   "repository": {
-    "type" : "git",
-    "url" : "<%= repoUrl %>"
+    "type": "git",
+    "url": "<%= repoUrl %>"
   },
   "author": "<%= author %>",
   "license": "<%= license %>",

@@ -3,42 +3,42 @@
  * For full documentation, please see https://rushjs.io
  */
 {
-  "$schema": "https://developer.microsoft.com/json-schemas/rush/v5/rush.schema.json",
-  "pnpmVersion": "4.14.4",
-  "rushVersion": "5.36.2",
-  "nodeSupportedVersionRange": ">=12.16.0",
-  "pnpmOptions": {
-    "strictPeerDependencies": true
-  },
-  "ensureConsistentVersions": true,
-  "projectFolderMaxDepth": 4,
-  "repository": {
-    "url" : "<%= repoUrl %>"
-  },
-  "projects": [
-    {
-      "packageName": "<%= npmScope %>/eslint-config",
-      "projectFolder": "packages/common/config/eslint-config",
-      "reviewCategory": "production",
-      "versionPolicyName": "public"
+    "$schema": "https://developer.microsoft.com/json-schemas/rush/v5/rush.schema.json",
+    "pnpmVersion": "4.14.4",
+    "rushVersion": "5.36.2",
+    "nodeSupportedVersionRange": ">=12.16.0",
+    "pnpmOptions": {
+        "strictPeerDependencies": true
     },
-    {
-      "packageName": "<%= npmScope %>/jest-config",
-      "projectFolder": "packages/common/config/jest-config",
-      "reviewCategory": "production",
-      "versionPolicyName": "public"
+    "ensureConsistentVersions": true,
+    "projectFolderMaxDepth": 4,
+    "repository": {
+        "url": "<%= repoUrl %>"
     },
-    {
-      "packageName": "<%= npmScope %>/ts-config",
-      "projectFolder": "packages/common/config/ts-config",
-      "reviewCategory": "production",
-      "versionPolicyName": "public"
-    },
-    {
-      "packageName": "<%= npmScope %>/example-typescript",
-      "projectFolder": "packages/example-typescript",
-      "reviewCategory": "production",
-      "versionPolicyName": "public"
-    }
-  ]
+    "projects": [
+        {
+            "packageName": "<%= npmScope %>/eslint-config",
+            "projectFolder": "packages/common/config/eslint-config",
+            "reviewCategory": "production",
+            "versionPolicyName": "public"
+        },
+        {
+            "packageName": "<%= npmScope %>/jest-config",
+            "projectFolder": "packages/common/config/jest-config",
+            "reviewCategory": "production",
+            "versionPolicyName": "public"
+        },
+        {
+            "packageName": "<%= npmScope %>/ts-config",
+            "projectFolder": "packages/common/config/ts-config",
+            "reviewCategory": "production",
+            "versionPolicyName": "public"
+        },
+        {
+            "packageName": "<%= npmScope %>/example-typescript",
+            "projectFolder": "packages/example-typescript",
+            "reviewCategory": "production",
+            "versionPolicyName": "public"
+        }
+    ]
 }
