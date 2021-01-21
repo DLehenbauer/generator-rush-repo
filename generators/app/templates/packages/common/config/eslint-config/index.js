@@ -2,8 +2,8 @@
 require("@rushstack/eslint-config/patch/modern-module-resolution");
 
 module.exports = {
-    extends: ["@rushstack/eslint-config"],
-    plugins: ["header"],
+    extends: ["@rushstack/eslint-config/profile/node"],
+    plugins: ["header", "prettier"],
     rules: {
         "header/header": [
             "error",
@@ -11,5 +11,6 @@ module.exports = {
             "!\n * Copyright (c) <%= author %>. All rights reserved.\n * Licensed under the <%= license %> License.\n ",
             /* newLines: */ 2, // '\n\n' = 1 blank line after block comment
         ],
+        "prettier/prettier": "error",
     },
 };
