@@ -1,0 +1,5 @@
+# Rush scripts
+/generators/app/templates/common/scripts/
+
+# Test output
+/test/
